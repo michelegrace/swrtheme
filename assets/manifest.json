@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "animate.css": {
+      "files": [
+        "styles/third_party/animate.css"
+      ]
+    },
+    "wow.min.js": {
+      "files": [
+        "scripts/third_party/wow.min.js"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://192.168.33.10/"
+  }
+}

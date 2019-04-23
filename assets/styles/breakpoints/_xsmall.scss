@@ -1,0 +1,227 @@
+#recent li:first-of-type a.blog-item {
+  max-height: initial;
+}
+
+.text-right {
+  text-align: left!important;
+}
+
+.back-issue {
+  margin-top: 22px;
+  display: block;
+}
+
+.logo-bg {
+  left: -100px;
+  top: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.logo-wrapper a {
+  top: 15px;
+  left: 5px;
+  img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+  }
+}
+
+#main-blog article:first-of-type .blog-item .content-wrapper, #main-blog article:nth-child(6) .blog-item .content-wrapper {
+  width: 100%;
+}
+
+#main-blog article:first-of-type .blog-item, #main-blog article:nth-child(6) .blog-item {
+  flex-direction: column;
+}
+
+#main-blog article {
+  margin: 0 auto;
+  width: 95%;
+  float: 0;
+}
+
+
+#main-menu-toggle {
+  top: 25px;
+}
+
+.menu-close {
+  top: 60px;
+}
+
+header {
+  padding: 0 0 20px;
+  a.title {
+    margin-top: 65px;
+    padding: 0 15px;
+  }
+}
+
+.xs-remove-padding{
+  padding-left: 0;
+}
+
+.hamburger-menu.menu-drop {
+  padding-top: 125px;
+}
+
+.large-padding-top {
+  padding-top: 45px;
+}
+
+.home-hero .flex-row, .issues-hero .flex-row, .flex-inner {
+  display: block;
+
+}
+
+.position-handler {
+  margin: 0 auto;
+}
+
+.hamburger-menu .social-media {
+  text-align: right;
+}
+
+.home-hero img.img-responsive {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: translate(0,0);
+}
+.header-issue-image {
+  margin: 0 auto;
+}
+.subscription-cta {
+  * {
+    text-align: center;
+  }
+}
+
+#recent li:first-of-type:after {
+  content: none;
+}
+
+#recent li {
+  display: block;
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.flex-row .flex-item.flex-bottom {
+  align-self: center;
+}
+
+#addFeatured .featured-wrapper, #featured .featured-wrapper {
+  display: flex;
+}
+
+#addFeatured .featured-wrapper, #addFeatured a, #featured .featured-wrapper {
+  flex-direction: column;
+}
+
+#main-blog .col-md-10 .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#addFeatured a {
+  min-height: 250px;
+  display: flex;
+}
+
+.featured-triangle {
+  width: 20%;
+  padding-top: 20%;
+}
+
+@media screen and (max-width: 480px){
+  .hamburger-menu {
+    top: -800%;
+  }
+  header a.title {
+    margin-top: 65px;
+  }
+}
+
+.flex-row {
+  display: block;
+  .flex-item {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.prize-awards-row{
+  &.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h3 {
+    line-height: 24px;
+  }
+  .adding-right-padding p {
+    padding-right: 0;
+  }
+}
+
+button.close {
+  top: -40px;
+  position: relative;
+}
+
+#myModal .modal-content {
+  padding: 40px 0;
+}
+
+#myModal {
+  .modal-body {
+    ul {
+      padding: 0 0 40px 20px;
+    }
+  }
+}
+
+.fixed-top {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px){
+header {
+  top: -47px;
+  position: relative;
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 430px){
+  header {
+    top: -47px;
+    position: relative;
+    width: 100%;
+  }
+  .logo-bg {
+    left: -100px;
+    top: -150px;
+    width: 200px;
+    height: 200px;
+  }
+  .logo-wrapper a {
+    top: -22px;
+    left: 10px;
+  }
+  .indie-issue-order-cta img {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .blog .triangle-home-bg, .home-hero, .issue-banner {
+    margin-top: 0px;
+  }
+}

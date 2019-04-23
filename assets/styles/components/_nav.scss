@@ -1,0 +1,212 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: auto;
+  border: 0;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 10px 15px;
+      & > a {
+        color: $white;
+        text-transform: capitalize;
+        padding: 0;
+      }
+      &.active > a, &.active:focus > a, &.active:hover > a,
+      & > a.active, &:focus > a.active, &:hover > a.active,
+      &.open > a, &.open:focus > a, &.open:hover > a, &:focus > a,
+      &:hover > a{
+        background: transparent;
+      }
+      &.active > a {
+        font-family: $bold;
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+}
+
+.more {
+  font-family: $body;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.3px;
+  position: relative;
+  top: -3px;
+  padding-right: 6px;
+}
+
+.hamburger-menu {
+  background: $black;
+  padding: 45px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  top: -500%;
+  transition: .3s all ease-in;
+  .social-media {
+    margin-top: 63px;
+    padding-left: 40px;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 12px;
+      &:first-of-type {
+        padding-left: 0;
+      }
+      a {
+        color: $white;
+        font-size: 32px;
+        &:focus, &:hover {
+          color: $grey;
+        }
+      }
+    }
+  }
+  &.menu-drop {
+    top: 0px;
+  }
+  .small-link {
+    font-family: $body;
+    font-size: 14px;
+    color: $white;
+    letter-spacing: 2.65px;
+    text-transform: uppercase;
+    padding-left: 45px;
+    text-align: left;
+    margin-bottom: 25px;
+    display: none;
+  }
+  .remove-padding {
+    padding-left: 0;
+  }
+  #menu-internal-menu-row-2 {
+     li {
+      padding: 8px 0;
+       a {
+         font-family: $body;
+         font-size: 32px;
+         color: $white;
+         letter-spacing: 0.05px;
+         line-height: 45px;
+         transition: .2s all ease;
+         &:after {
+           content: "\f105";
+           font-family: fontawesome;
+           display: inline-block;
+           padding-left: 6px;
+           opacity: 0;
+         }
+       }
+       &:focus, &:hover {
+         a {
+           color: $grey;
+           padding-left: 10px;
+           &:after {
+             opacity: 1;
+           }
+         }
+       }
+    }
+  }
+  .menu-main-menu-container {
+    ul li {
+      padding: 12px 0;
+    }
+    ul li a {
+      font-family: $body;
+      font-size: 42px;
+      color: #FFFFFF;
+      letter-spacing: 0.06px;
+      text-align: center;
+      line-height: 45px;
+    }
+  }
+}
+
+#main-menu-toggle {
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+#main-menu-toggle, .menu-close {
+  position: absolute;
+  z-index: 103;
+  color: white;
+  right: 32px;
+  font-size: 32px;
+  visibility: visible;
+  opacity: 1;
+  transition: .4s opacity ease;
+  &:focus, &:hover {
+    .align-arrow {
+      opacity: .8;
+    }
+    span.more {
+      color: $grey;
+    }
+
+  }
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+#menu-internal-menu {
+  &.nav>li>a:focus, &.nav>li>a:hover,
+  &.nav>li:focus > a, &.nav>li:hover > a{
+    color: #888;
+    background: transparent;
+  }
+}
+
+#menu-internal-menu-1 {
+  li > a {
+    font-family: $body;
+    font-size: 42px;
+    color: #FFFFFF;
+    letter-spacing: 0.06px;
+    line-height: 45px;
+  }
+  li {
+    padding: 0 0 31px;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+    a {
+      transition: .2s all ease;
+      &:after {
+        content: "\f105";
+        font-family: 'fontawesome';
+        display: inline-block;
+        padding-left: 6px;
+        opacity: 0;
+      }
+    }
+    &:focus, &:hover {
+      a {
+        color: $grey;
+        padding-left: 10px;
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.nav > li.active > a:after, &.nav > li > a:focus:after, &.nav > li > a:hover:after,
+  &.nav > li:focus > a:after, &.nav > li:hover > a:after {
+    opacity: 1;
+  }
+}
+
+.hamburger-menu  {
+  #menu-internal-menu-row-2, #menu-internal-menu-1 {
+    li.current_page_item {
+      & > a {
+        color: #888;
+      }
+    }
+  }
+}

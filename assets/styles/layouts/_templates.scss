@@ -1,0 +1,19 @@
+.story-title .exclusive-meta {
+  .author {
+    display: inline-block;
+  }
+  .post-date {
+    font-weight: 400;
+    font-style: italic;
+    color: $text;
+  }
+  span{
+    padding: 0 10px;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}

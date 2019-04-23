@@ -1,0 +1,11 @@
+.wrap {
+   padding-top: 4.75%;
+ }
+
+@media screen and (min-width: 1400px){
+  .blog .triangle-home-bg,
+  section.issue-banner,
+  .home-hero {
+    margin-top: -32px;
+  }
+}

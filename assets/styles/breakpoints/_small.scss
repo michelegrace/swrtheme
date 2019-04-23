@@ -1,0 +1,73 @@
+ .hamburger-menu {
+    top: -800%;
+  }
+  header {
+    padding: 10px 0;
+  }
+  .issue-banner, .blog .triangle-home-bg, .home-hero {
+    margin-top: 55px;
+  }
+
+  #addFeatured {
+    margin-bottom: 20px;
+    display: flex;
+    padding: 0.5em;
+  }
+  .add-spacer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .internal-bg-grey {
+    padding: 140px 0 60px;
+  }
+
+#featured {
+  a.flex-row {
+  }
+  .featured-wrapper {
+    width:100%;
+  }
+  .byline {
+     max-width: 100%;
+    margin-top: 22px;
+  }
+}
+
+#featured .h1 {
+  font-size: 29px;
+  line-height: 35px;
+}
+
+.home-hero {
+  padding: 120px 0 100px;
+}
+
+#recent div.blog-wrap {
+  width: 100%;
+}
+
+.prize-awards-row.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#recent li:first-of-type {
+  width: 100%;
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.logo-wrapper a {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  z-index: 103;
+}
+
+.cta-padding {
+  text-align: center;
+}
+
+.internal-grey-bg .text-center h1 {
+  width: 100%;
+}

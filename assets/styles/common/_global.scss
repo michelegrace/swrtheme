@@ -1,0 +1,156 @@
+.visible-xl {
+  display: none;
+}
+
+body {
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  font-family: $body, san-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  color: $black;
+}
+
+.indent {
+  text-indent: 50px;
+}
+
+em {
+  font-family: $bodyi;
+  font-style: initial;
+}
+
+a{
+  cursor: pointer;
+  &[disabled="disabled"]{
+    cursor: initial;
+  }
+  &.underline {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3.08px;
+    &:hover {
+      color: inherit;
+      &:after {
+        width: 100%;
+      }
+    }
+    &:after {
+      content: '';
+      border-bottom: 1px solid $othergrey;
+      display: block;
+      width: 0px;
+      margin: 0 auto;
+      transition: .2s all ease;
+    }
+  }
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+  &.disabled {
+    font-size: 18px;
+    color: #888888;
+    letter-spacing: 0;
+  }
+}
+
+h1 {
+  font-size: 42px;
+  color: $black;
+  letter-spacing: 0.06px;
+  text-align: center;
+  line-height: 45px;
+  &.divider:after {
+    content: '';
+    width: 100%;
+    max-width: 171px;
+    border-bottom: 1px solid $white;
+    display: block;
+  }
+}
+
+.h1 {
+  font-family: $bold;
+  font-size: 22px;
+  color: $black;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: $book;
+  font-size: 42px;
+  letter-spacing: 0.06px;
+  line-height: 45px;
+  &.small {
+    font-family: $body;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $black;
+    letter-spacing: 3.08px;
+  }
+  &.black {
+    color: #4A4A4A;
+    letter-spacing: 0;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  color: $black;
+  letter-spacing: 0;
+  font-family: $bold;
+  a {
+    color: inherit;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  color: $black;
+  letter-spacing: 0;
+  font-family: $book;
+}
+
+.white-box {
+  padding: 27px 30px;
+  background: $white;
+  display: block;
+}
+
+.shadow {
+  box-shadow: 0 0 22px 1px rgba(0,0,0,.08);
+  transition: .2s all ease;
+  &:hover {
+    box-shadow: 0 0 22px 1px rgba(0,0,0,.2);
+  }
+}
+
+.view-more {
+  color: $black;
+}
+
+.fixed-top {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 30px;
+}
+
+.wrap {
+  padding-top: 5.75%;
+}
+
+.enlarge-hover {
+  img {
+    transition: .2s transform ease-in;
+    transform: scale(1);
+  }
+  &:focus, &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,1 @@
+<h6><?php the_category(', '); ?></h6><time class="updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>

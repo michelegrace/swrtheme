@@ -1,0 +1,33 @@
+.btn {
+  text-align: center;
+  width: 100%;
+  max-width: 304px;
+  padding: 15px 1px;
+  text-transform: uppercase;
+  white-space: pre-line;
+  border-radius: 0;
+  color: $black;
+  font-family: $body;
+  letter-spacing: 3.08px;
+  transition: .2s all ease-in;
+  line-height: initial;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 22px 1px rgba(0,0,0,.2);
+  }
+}
+
+.white-btn {
+  background: $white;
+  &:focus, &:hover {
+    background: rgba(255,255,255,.8);
+  }
+}
+
+.grey-btn {
+  background: #F0EEEF;
+  &:focus, &:hover {
+    background: #F0EEEF;
+  }
+}

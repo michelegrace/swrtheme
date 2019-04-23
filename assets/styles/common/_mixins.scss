@@ -1,0 +1,20 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontsize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+@mixin underline() {
+  &:after {
+    content: "";
+    display: block;
+    width: 145px;
+    border-bottom: 1px solid $white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

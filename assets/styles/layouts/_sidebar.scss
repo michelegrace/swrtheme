@@ -1,0 +1,87 @@
+.subscription-cta {
+  padding: 85px 0;
+  box-shadow: 0 10px 22px 1px rgba(0,0,0,.08);
+  .cta-padding {
+    margin-top: 22px;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: $bold;
+  }
+  p {
+    text-transform: uppercase;
+    font-family: $book;
+    font-size: 14px;
+    color: $black;
+    letter-spacing: 3.08px;
+    margin-bottom: 6px;
+  }
+  .textright {
+    font-size: 18px;
+    font-family: $book;
+    color: $othergrey;
+  }
+  a {
+    font-size: 18px;
+    color: $othergrey;
+    letter-spacing: 0.03em;
+    text-align: center;
+    display: inline-block;
+    font-family: $book;
+    padding: 0 12px;
+    &.underline {
+      color: $black;
+    }
+  }
+}
+
+
+.heateor_sss_sharing_container {
+  margin-bottom: 15px;
+}
+
+.web_ex_white_box {
+  padding: 35px;
+  min-height: 186px;
+  background: #fff;
+  color: #4a4a4a;
+  box-shadow: 0 2px 17px 0 rgba(0,0,0,.09);
+  cursor: pointer;
+  transition: all .2s ease-in;
+  display: block;
+  margin-bottom: 30px;
+  &.selected {
+    box-shadow: 0 2px 17px 0 rgba(0,0,0,.25);
+    border-top: 3px solid #000;
+  }
+  h2 {
+    margin: 0;
+    font-family: $body;
+    font-size: 28px;
+    color: $black;
+    letter-spacing: 0;
+    line-height: 1.3em;
+    width: 100%;
+  }
+  span.title {
+    font-family: $bold;
+    font-size: 14px;
+    display:block;
+    margin-bottom: 20px;
+    color: $black;
+    letter-spacing: 4.72px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  &:focus, &:hover {
+    box-shadow: 0 2px 17px 0 rgba(0,0,0,.25);
+    border-top: 3px solid #000;
+  }
+}
+
+#story-add {
+  img {
+    margin-bottom: 35px;
+  }
+}
